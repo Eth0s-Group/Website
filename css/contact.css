@@ -89,6 +89,65 @@ body {
 .contact .requests:focus {
     width: 43vw;
 }
+.contact .number{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    max-width: 100vw;
+}
+.contact .number {
+    font-size: 34px;
+    border-radius: 12px;
+    position: fixed;
+    background: radial-gradient(#4653fd, #5763ff);
+    border: none;
+    color: #FFFFFF;
+    padding: 0px;
+    width: 25vw;
+    height: 25vw;
+    display: block;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto 55vw;
+    text-align: center;
+    -webkit-transition-duration: .4s; /* Safari */
+    transition-duration: .4s;
+    text-decoration: none;
+}
+.contact .number span{
+    -webkit-transition-duration: 0s; /* Safari */
+    transition-duration: 0s;
+    display: inline-block;
+}
+.contact .phone{
+    font-size: 4vw;
+    transition: opacity 0s ease-out 0s;
+    position: absolute;
+    opacity: 0;
+    top: auto;
+    left: 0;
+}
+.contact .number span{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.contact .number:focus .icon{
+    opacity: 0;
+}
+.contact .number:focus .phone{
+    transition: opacity .3s ease-out .3s;
+    opacity: 1;
+}
+.contact .number.requests:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.contact .number:focus {
+    width: 43vw;
+}
 :root{
     color-scheme: dark;
 }
@@ -164,5 +223,52 @@ body {
     }
     .contact .requests:focus {
         width: 25vw;
+    }
+    .contact .number {
+        margin: 70vh auto;
+        transform-origin: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        width: 10vw;
+        height: 10vw;
+    }
+    .contact .phone{
+        white-space: nowrap;
+        font-size: 28px;
+        transition: opacity 0s ease-out 0s;
+        position: absolute;
+        opacity: 0;
+        top: 8vh;
+        left: .8vw;
+    }
+    .contact .number span{
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    .contact .number:hover .icon{
+        opacity: 0;
+    }
+    .contact .number:hover .phone{
+        transition: opacity .3s ease-out .3s;
+        opacity: 1;
+    }
+    .contact .number.requests:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+    .contact .number:hover {
+        width: 15vw;
+    }
+    .contact .number:focus .icon{
+        opacity: 0;
+    }
+    .contact .number:focus .phone{
+        transition: opacity .1s ease-out .1s;
+        opacity: 1;
+    }
+    .contact .number:focus {
+        width: 15vw;
     }
 }
